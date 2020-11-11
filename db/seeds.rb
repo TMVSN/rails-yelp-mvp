@@ -19,12 +19,12 @@ Review.destroy_all
 
   )
   restaurant.save!
-  # 5.times do
-  #   review = Review.new(
-  #     rating: rand(0..5),
-  #     content: Faker::Restaurant.review 
-  #   )
-  #   review.restaurant = restaurant
-  #   review.save!
-  # end
+  5.times do
+    review = Review.new(
+      rating: rand(0..5),
+      content: Faker::Restaurant.review 
+    )
+    review.restaurant = restaurant
+    review.save!
+  end
 end
